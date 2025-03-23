@@ -3,7 +3,6 @@ import { NavLink } from "react-router";
 import {
   Fade,
   Drawer,
-  Box,
   Divider,
   List,
   ListItem,
@@ -17,7 +16,7 @@ import HistoryIcon from "@mui/icons-material/History";
 import SettingsIcon from "@mui/icons-material/Settings";
 import AddIcon from "@mui/icons-material/Add";
 
-import {Chat} from "../pages/chat/index"
+// import {Chat} from "../pages/chat/index"
 
 export const SideBar = () => {
   const [extended, setExtended] = useState(false);
@@ -67,7 +66,7 @@ export const SideBar = () => {
             <ListItemText primary="New Chat" />
           </Fade>
         </ListItem>
-        <Chat/>
+        {/* <Chat/> */}
       </List>
       <Divider />
       <List>
@@ -111,7 +110,8 @@ export const SideBar = () => {
         }}>
             <SettingsIcon />
           </ListItemIcon>
-          <Fade in={extended} timeout={300}>
+          <Fade in={extended} timeout={300}
+          >
             <ListItemText primary="Settings" />
           </Fade>
         </ListItem>
