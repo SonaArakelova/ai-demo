@@ -33,4 +33,6 @@ export const routes = createBrowserRouter([
       },
     ],
   },
-]);
+], 
+  {basename: '/ai-demo',}
+);
